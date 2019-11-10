@@ -1,5 +1,4 @@
 #include "String.h"
-#include "String.h"
 
 void String::InputString()
 {
@@ -11,10 +10,32 @@ void String::InputString()
 	CopyByChar(buf);
 }
 
-inline void String::PrintString()
+void String::PrintString()
 {
 	for (int i = 0; str[i] != '\0'; i++)
 	{
 		cout << str[i];
+	}
+}
+
+void String::CopyByChar(char* _str)
+{
+	strSize = strnlen_s(_str, 10000) + 1;
+	if (str) delete[] str;
+	str = new char[strSize];
+	for (size_t i = 0; i < strSize; i++)
+	{
+		str[i] = _str[i];
+	}
+}
+
+void String::CopyByChar(const char _str[])
+{
+	strSize = strnlen_s(_str, 10000) + 1;
+	if (str) delete[] str;
+	str = new char[strSize];
+	for (size_t i = 0; i < strSize; i++)
+	{
+		str[i] = _str[i];
 	}
 }

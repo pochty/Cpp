@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-/*Class counter*/
+/*Class Counter*/
 class Counter
 {
 public:

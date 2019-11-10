@@ -13,13 +13,7 @@ public:
 	{
 		Name = _Name;
 	}
-	Person(std::string _Name, char _Sex, size_t _Age, std::string _PhoneNumber)
-	{
-		SetName(_Name);
-		SetSex(_Sex);
-		SetAge(_Age);
-		SetPhoneNumber(_PhoneNumber);
-	}
+	Person(std::string _Name, char _Sex, size_t _Age, std::string _PhoneNumber);
 
 	void SetName(std::string _Name)
 	{
@@ -53,14 +47,7 @@ public:
 	{
 		return PhoneNumber;
 	}
-	friend std::ostream& operator<<(std::ostream& os, Person p)
-	{
-		os << "\nName:\t" << p.GetName() << std::endl
-			<< "Age:\t" << p.GetAge() << std::endl
-			<< "Sex:\t" << (p.GetSex() ? "Female" : "Male") << std::endl
-			<< "Phone:\t" << p.GetPhoneNumber() << std::endl;
-		return os;
-	}
+	friend std::ostream& operator<<(std::ostream& os, Person p);
 
 private:
 	std::string Name;

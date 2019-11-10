@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{CD8B568F-678E-4B2A-B240-86B1CDDB46F4}</ProjectGuid>
-    <RootNamespace>My0202String</RootNamespace>
+    <ProjectGuid>{7F778F32-458D-4EA5-8CA8-CC654395092F}</ProjectGuid>
+    <RootNamespace>My0302Matrix</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,11 +123,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="String.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MatrixMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="String.h" />
+    <ClInclude Include="Matrix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

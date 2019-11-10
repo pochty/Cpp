@@ -38,36 +38,16 @@ private:
 	size_t strSize;
 	char* str;
 
-	void CopyByChar(char* _str)
-	{
-		strSize = strnlen_s(_str, 10000) + 1;
-		if (str) delete[] str;
-		str = new char[strSize];
-		for (size_t i = 0; i < strSize; i++)
-		{
-			str[i] = _str[i];
-		}
-	}
-	void CopyByChar(const char _str[])
-	{
-		strSize = strnlen_s(_str, 10000) + 1;
-		if (str) delete[] str;
-		str = new char[strSize];
-		for (size_t i = 0; i < strSize; i++)
-		{
-			str[i] = _str[i];
-		}
-	}
+	void CopyByChar(char* _str);
+	void CopyByChar(const char _str[]);
 
 	friend istream& operator>>(istream& is, String& st)
 	{
-		is >> st.str;
-		return is;
+		return is >> st.str;
 	}
 	friend ostream& operator<<(ostream& os, String& st)
 	{
-		os << st.str;
-		return os;
+		return os << st.str;
 	}
 };
 

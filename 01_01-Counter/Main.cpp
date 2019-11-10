@@ -1,6 +1,6 @@
 #include <limits>
 #include "Counter.h"
-#include "UserInput.cpp"
+#include "../00_00-adlib/GetUserInput.cpp"
 
 using namespace std;
 
@@ -12,16 +12,13 @@ int main()
 		system("cls");
 		count.Print();
 		cout << "\n1. Set min value\n2. Set max value\n3. Increment counter\n4. Reset counter\n0. Exit\n\n";
-		cout << "Option";
-		switch (GetUserInput(1,0,4))
+		switch (GetUserInput(1,0,4, "Select"))
 		{
 		case 1:
-			cout << "Min value";
-			count.SetMinVal(GetUserInput(1, INT_MIN, INT_MAX));
+			count.SetMinVal(GetUserInput(1, INT_MIN, INT_MAX, "Min value"));
 			break;
 		case 2:
-			cout << "Max value";
-			count.SetMaxVal(GetUserInput(1, INT_MIN, INT_MAX));
+			count.SetMaxVal(GetUserInput(1, INT_MIN, INT_MAX, "Max value"));
 			break;
 		case 3:
 			++count;

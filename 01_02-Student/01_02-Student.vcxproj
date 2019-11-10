@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{8FEB2033-9B43-4D47-A8C5-CC4807ED9BDA}</ProjectGuid>
-    <RootNamespace>My0011Student</RootNamespace>
+    <ProjectGuid>{8A1757DD-BC51-4DFD-8D0F-AC6992D1C5EE}</ProjectGuid>
+    <RootNamespace>My0102Student</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,15 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Date.h" />
-    <ClInclude Include="Student.h" />
-    <ClInclude Include="StudentGroup.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="StudentGroup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentGroup.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
